@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Nelson Munguambe</title>
+    <link href="../frameworks/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../frameworks/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .contact-card {
+            transition: transform 0.3s;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .map-container {
+            height: 300px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="home.html">
+                <i class="bi bi-code-slash"></i> Nelson Munguambe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">
+                            <i class="bi bi-house"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="bi bi-person"></i> Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">
+                            <i class="bi bi-tools"></i> Habilidades
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">
+                            <i class="bi bi-folder"></i> Projetos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">
+                            <i class="bi bi-envelope"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="alert alert-warning rounded-0 mb-0 text-center">
+        <div class="container">
+            <h4 class="mb-0"><i class="bi bi-envelope-check"></i> Vamos Trabalhar Juntos - Entre em Contacto</h4>
+        </div>
+    </div>
+
+    <!-- Contact Header -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold">Vamos Conversar</h1>
+                    <p class="lead">Estou disponível para oportunidades de freelance, projetos colaborativos e posições em tempo integral.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <span class="badge bg-primary">Disponível para Freelance</span>
+                        <span class="badge bg-success">Resposta em 24h</span>
+                        <span class="badge bg-info">Orçamentos Gratuitos</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="bi bi-chat-dots display-1 text-warning"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card contact-card shadow border-0 h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-geo-alt display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Localização</h5>
+                            <p class="card-text">Bagamoyo, Maputo<br>Moçambique</p>
+                            <small class="text-muted">Disponível para trabalho remoto</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card contact-card shadow border-0 h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-envelope display-4 text-success mb-3"></i>
+                            <h5 class="card-title">Email</h5>
+                            <p class="card-text">munguambenelson26email.com</p>
+                            <small class="text-muted">Resposta em até 24 horas</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card contact-card shadow border-0 h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-phone display-4 text-warning mb-3"></i>
+                            <h5 class="card-title">Telefone</h5>
+                            <p class="card-text">+258 84 240 8700</p>
+                            <small class="text-muted">WhatsApp disponível</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="card shadow border-0">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="bi bi-send"></i> Envie uma Mensagem</h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Nome Completo *</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Assunto *</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="" selected disabled>Selecione o assunto</option>
+                                        <option value="freelance">Projeto Freelance</option>
+                                        <option value="job">Oportunidade de Emprego</option>
+                                        <option value="collab">Colaboração</option>
+                                        
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="budget" class="form-label">Orçamento (Opcional)</label>
+                                    <select class="form-select" id="budget">
+                                        <option value="" selected>Selecione uma faixa</option>
+                                        <option value="5-10">5.000 - 10.000 MZN</option>
+                                        <option value="10-25">10.000 - 25.000 MZN</option>
+                                        <option value="25-50">25.000 - 50.000 MZN</option>
+                                        <option value="50+">50.000+ MZN</option>
+                                        <option value="discutir">A discutir</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensagem *</label>
+                                    <textarea class="form-control" id="message" rows="5" required placeholder="Descreva o seu projeto ou oportunidade..."></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">
+                                        Desejo receber actualizações sobre novos projetos e tecnologias
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="bi bi-send"></i> Enviar Mensagem
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Info -->
+                <div class="col-lg-4">
+                    <!-- Availability -->
+                    <div class="card shadow border-0 mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0"><i class="bi bi-calendar-check"></i> Disponibilidade</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h6><i class="bi bi-check-circle text-success"></i> Freelance</h6>
+                                <small class="text-muted">Disponível imediatamente</small>
+                            </div>
+                            <div class="mb-3">
+                                <h6><i class="bi bi-check-circle text-success"></i> Tempo Integral</h6>
+                                <small class="text-muted">Aceitando propostas</small>
+                            </div>
+                            <div class="mb-3">
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    <div class="card shadow border-0 mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0"><i class="bi bi-clock"></i> Tempo de Resposta</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h6>Email</h6>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-info" style="width: 95%"></div>
+                                </div>
+                                <small>24 horas</small>
+                            </div>
+                            <div class="mb-3">
+                                <h6>WhatsApp</h6>
+                                <div class="progress mb-2">
+                                    <div class="progress-bar bg-success" style="width: 98%"></div>
+                                </div>
+                                <small>2-4 horas</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="card shadow border-0">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0"><i class="bi bi-tools"></i> Serviços Oferecidos</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Desenvolvimento Web
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Aplicações Mobile
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    APIs RESTful
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Bancos de Dados
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Manutenção de Sistemas
+                                </li>
+                     
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card shadow border-0">
+                        <div class="card-header bg-dark text-white">
+                            <h5 class="mb-0"><i class="bi bi-geo-alt"></i> Localização - Maputo, Moçambique</h5>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="map-container">
+                                <!-- Placeholder for map -->
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center bg-light">
+                                    <div class="text-center">
+                                        <i class="bi bi-map display-1 text-muted"></i>
+                                        <p class="mt-3 text-muted">Maputo, Moçambique<br>
+                                        <small>Bagamoyo Area</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Perguntas Frequentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Qual é o tempo médio de desenvolvimento?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Depende da complexidade do projeto. Sites simples: 1-2 semanas. Aplicações complexas: 1-3 meses. Forneço cronograma detalhado após análise do projeto.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Trabalha com manutenção de sistemas existentes?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim, ofereço serviços de manutenção, correção de bugs, atualizações e melhorias em sistemas existentes desenvolvidos em PHP, Java, C# ou outras tecnologias.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Fornece suporte pós-projeto?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim, ofereço 30 dias de suporte gratuito após a entrega. Após esse período, disponibilizo pacotes de suporte mensal ou horário.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-code-slash"></i> Nelson Munguambe
+                    </h5>
+                    <p>Desenvolvedor Full Stack especializado em HTML, CSS, JavaScript, React, PHP, Laravel, Java, Spring, C# e MySQL.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="fw-bold">Navegação</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">Sobre</a></li>
+                        <li><a href="skills.html" class="text-light text-decoration-none">Habilidades</a></li>
+                        <li><a href="projects.html" class="text-light text-decoration-none">Projetos</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold">Tecnologias</h6>
+                    <ul class="list-unstyled">
+                        <li> HTML, CSS, JavaScript</li>
+                        <li> React & PHP Laravel</li>
+                        <li> Java Spring & C#</li>
+                        <li> MySQL & Python Django</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold">Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt me-2"></i> Bagamoyo, Maputo - Moçambique</li>
+                        <li><i class="bi bi-envelope me-2"></i> munguambenelson26@gmail.com</li>
+                        <li><i class="bi bi-phone me-2"></i> +258 84 240 8700</li>
+                        <li><i class="bi bi-building me-2"></i> Universidade Joaquim Chissano</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Nelson Munguambe. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-translate"></i> Português
+                        </button>
+                        <button type="button" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-translate"></i> English
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../frameworks/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+           
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="bi bi-hourglass-split"></i> Enviando...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                
+                alert('ainda em desenvolvimento do modulo do envio do email');
+                
+                
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
