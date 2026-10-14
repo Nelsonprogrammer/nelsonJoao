@@ -1,333 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Nelson Munguambe</title>
-    <link href="../frameworks/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../frameworks/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        .profile-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 0;
-        }
-        .timeline {
-            position: relative;
-            padding-left: 30px;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 15px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: #667eea;
-        }
-        .timeline-item {
-            position: relative;
-            margin-bottom: 30px;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -23px;
-            top: 5px;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #667eea;
-            border: 2px solid white;
-        }
-        .experience-card {
-            transition: transform 0.3s;
-        }
-        .experience-card:hover {
-            transform: translateY(-5px);
-        }
-    </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sobre | Nelson Munguambe</title>
+<meta name="description" content="Conheça Nelson João Munguambe: desenvolvedor Full Stack autodidata, administrador de sistemas e estudante de Engenharia em TSI na Universidade Joaquim Chissano, Maputo.">
+<meta name="author" content="Nelson João Munguambe">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://SEU-DOMINIO.com/pages/about.html">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_PT"><meta property="og:site_name" content="Nelson Munguambe">
+<meta property="og:title" content="Sobre | Nelson Munguambe"><meta property="og:description" content="Conheça Nelson João Munguambe: desenvolvedor Full Stack autodidata, administrador de sistemas e estudante de Engenharia em TSI na Universidade Joaquim Chissano, Maputo."><meta property="og:url" content="https://SEU-DOMINIO.com/pages/about.html"><meta property="og:image" content="https://SEU-DOMINIO.com/imagens/nelson1.jpeg"><meta property="og:image:alt" content="Retrato de Nelson Munguambe">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Sobre | Nelson Munguambe"><meta name="twitter:description" content="Conheça Nelson João Munguambe: desenvolvedor Full Stack autodidata, administrador de sistemas e estudante de Engenharia em TSI na Universidade Joaquim Chissano, Maputo."><meta name="twitter:image" content="https://SEU-DOMINIO.com/imagens/nelson1.jpeg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Nelson João Munguambe", "alternateName": ["Nelson Munguambe", "Nelson Munguambe Junior"], "url": "https://SEU-DOMINIO.com/pages/home.html", "image": "https://SEU-DOMINIO.com/imagens/nelson1.jpeg", "jobTitle": "Desenvolvedor Full Stack e Administrador de Sistemas", "description": "Desenvolvedor Full Stack e Administrador de Sistemas moçambicano, com experiência em PHP, Laravel, Java, Spring, React, redes, virtualização e segurança da informação.", "address": {"@type": "PostalAddress", "addressLocality": "Maputo", "addressCountry": "MZ"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidade Joaquim Chissano"}, "knowsAbout": ["Desenvolvimento web", "PHP", "Laravel", "Java", "Spring Boot", "React", "JavaScript", "MySQL", "Administração de sistemas", "Monitorização de servidores", "Redes VLAN WLAN Ethernet", "Virtualização", "Segurança da informação"], "sameAs": ["https://github.com/NelsonProgrammer"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+<link rel="stylesheet" href="../assets/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="home.html">
-                <i class="bi bi-code-slash"></i> Nelson Munguambe
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">
-                            <i class="bi bi-house"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="about.html">
-                            <i class="bi bi-person"></i> Sobre
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="skills.html">
-                            <i class="bi bi-tools"></i> Habilidades
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">
-                            <i class="bi bi-folder"></i> Projetos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            <i class="bi bi-envelope"></i> Contato
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Banner -->
-    <div class="alert alert-primary rounded-0 mb-0 text-center">
-        <div class="container">
-            <h4 class="mb-0"><i class="bi bi-info-circle"></i> Minha Jornada na Programação - Autodidata e Apaixonado por Tecnologia</h4>
-        </div>
-    </div>
-
-    <!-- Profile Section -->
-    <section class="profile-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-center mb-4">
-                    <img src="../imagens/nelson2.jpg" alt="Nelson Munguambe" class="rounded-circle shadow" width="250" height="250">
-                </div>
-                <div class="col-lg-8">
-                    <h1 class="display-5 fw-bold">Nelson João Munguambe Junior</h1>
-                    <p class="lead">Desenvolvedor Full Stack | Autodidata | Estudante de Engenharia</p>
-                    <div class="row mt-4">
-                        <div class="col-sm-6">
-                            <p><i class="bi bi-calendar me-2"></i><strong>Idade:</strong> 22 anos</p>
-                            <p><i class="bi bi-geo-alt me-2"></i><strong>Localização:</strong> Bagamoyo, Maputo - Moçambique</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p><i class="bi bi-book me-2"></i><strong>Formação:</strong> Engenharia em TSI (Cursando)</p>
-                            <p><i class="bi bi-building me-2"></i><strong>Universidade:</strong> Universidade Joaquim Chissano</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Content -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h3 class="mb-4">Minha Jornada na Programação</h3>
-                    <p class="lead">Sou um desenvolvedor moçambicano autodidata, apaixonado por tecnologia e inovação. Minha jornada na programação começou em 2022, quando dei os primeiros passos com Python.</p>
-                    
-                    <p>Durante 6 meses mergulhei fundo no Python, aprendendo os fundamentos da programação, lógica computacional e resolvendo problemas complexos. Essa base sólida me permitiu expandir meus conhecimentos para outras tecnologias.</p>
-
-                    <p>Como autodidata, desenvolvi uma forte capacidade de aprendizado independente e resolução de problemas. Atualmente, estou no terceiro ano do curso de Engenharia em Tecnologia e Sistemas de Informação na Universidade Joaquim Chissano, onde complemento meu conhecimento prático com fundamentos teóricos.</p>
-
-                    <div class="row mt-5">
-                        <div class="col-md-6">
-                            <div class="card experience-card shadow border-0 h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title text-primary">
-                                        <i class="bi bi-code-slash"></i> +2 Anos
-                                    </h5>
-                                    <p class="card-text">de experiência em desenvolvimento web full stack com projetos reais e aplicações funcionais.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card experience-card shadow border-0 h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title text-success">
-                                        <i class="bi bi-laptop"></i> +4 Anos
-                                    </h5>
-                                    <p class="card-text">de experiência geral com tecnologia, computação e resolução de problemas técnicos.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <h5><i class="bi bi-bullseye text-primary"></i> Objetivos Profissionais</h5>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Desenvolver soluções inovadoras para Moçambique</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Especializar-me em desenvolvimento full stack</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Contribuir para projetos open source</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Tornar-me referência em tecnologia em Moçambique</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h5><i class="bi bi-heart text-danger"></i> Paixões</h5>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="bi bi-code-square text-primary me-2"></i>Desenvolvimento de software</li>
-                                <li class="mb-2"><i class="bi bi-lightbulb text-warning me-2"></i>Inovação tecnológica</li>
-                                <li class="mb-2"><i class="bi bi-people text-success me-2"></i>Compartilhar conhecimento</li>
-                                <li class="mb-2"><i class="bi bi-globe text-info me-2"></i>Tecnologia para impacto social</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="card shadow">
-                        <div class="card-header bg-primary text-white">
-                            <h5 class="mb-0"><i class="bi bi-clock-history"></i> Linha do Tempo</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <h6>2022 - Presente</h6>
-                                    <p class="small mb-0"><strong>Universidade Joaquim Chissano</strong><br>Engenharia em Tecnologia e Sistemas de Informação</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h6>2022 - Início</h6>
-                                    <p class="small mb-0"><strong>Primeiros Passos em Python</strong><br>6 meses focados em fundamentos da programação</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h6>2022 - Meio</h6>
-                                    <p class="small mb-0"><strong>Expansão para Web Development</strong><br>HTML, CSS, JavaScript e frameworks</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h6>2023</h6>
-                                    <p class="small mb-0"><strong>Desenvolvimento Full Stack</strong><br>PHP, Laravel, Java, Spring, React, MySQL</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h6>2024</h6>
-                                    <p class="small mb-0"><strong>Projetos Reais & Experiência</strong><br>Aplicações em produção e colaborações</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card shadow mt-4">
-                        <div class="card-header bg-success text-white">
-                            <h5 class="mb-0"><i class="bi bi-award"></i> Metodologia de Aprendizado</h5>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li class="mb-3">
-                                    <i class="bi bi-check-circle-fill text-success"></i>
-                                    <strong>Aprendizado Prático</strong>
-                                    <br><small>Projetos reais como principal método</small>
-                                </li>
-                                <li class="mb-3">
-                                    <i class="bi bi-check-circle-fill text-success"></i>
-                                    <strong>Documentação Oficial</strong>
-                                    <br><small>Estudo direto da documentação</small>
-                                </li>
-                                <li class="mb-3">
-                                    <i class="bi bi-check-circle-fill text-success"></i>
-                                    <strong>Comunidade Tech</strong>
-                                    <br><small>Participação em fóruns e grupos</small>
-                                </li>
-                                <li class="mb-3">
-                                    <i class="bi bi-check-circle-fill text-success"></i>
-                                    <strong>Projetos Pessoais</strong>
-                                    <br><small>Desenvolvimento contínuo</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Philosophy Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h3 class="mb-4">Minha Filosofia</h3>
-                    <blockquote class="blockquote">
-                        <p class="fs-4 fst-italic text-muted">
-                            "Acredito que a tecnologia é a ferramenta mais poderosa para transformar realidades. Como desenvolvedor autodidata, aprendi que não existem limites para o aprendizado quando há paixão e determinação."
-                        </p>
-                        <footer class="blockquote-footer mt-3">Nelson Munguambe</footer>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h5 class="fw-bold mb-3">
-                        <i class="bi bi-code-slash"></i> Nelson Munguambe
-                    </h5>
-                    <p>Desenvolvedor Full Stack autodidata com +2 anos de experiência em desenvolvimento web e +4 anos de experiência geral com tecnologia.</p>
-                    <div class="social-links">
-                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-github"></i></a>
-                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 mb-4">
-                    <h6 class="fw-bold">Navegação</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="home.html" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="about.html" class="text-light text-decoration-none">Sobre</a></li>
-                        <li><a href="skills.html" class="text-light text-decoration-none">Habilidades</a></li>
-                        <li><a href="projects.html" class="text-light text-decoration-none">Projetos</a></li>
-                        <li><a href="contact.html" class="text-light text-decoration-none">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h6 class="fw-bold">Tecnologias</h6>
-                    <ul class="list-unstyled">
-                        <li> HTML, CSS, JavaScript</li>
-                        <li> React & PHP Laravel</li>
-                        <li> Java Spring & C#</li>
-                        <li> MySQL & Python Django</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h6 class="fw-bold">Contact Info</h6>
-                    <ul class="list-unstyled">
-                        <li><i class="bi bi-geo-alt me-2"></i> Bagamoyo, Maputo - Moçambique</li>
-                        <li><i class="bi bi-envelope me-2"></i> nelson.junior@email.com</li>
-                        <li><i class="bi bi-phone me-2"></i> +258 84 000 0000</li>
-                        <li><i class="bi bi-building me-2"></i> Universidade Joaquim Chissano</li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2026 Nelson Munguambe. Todos os direitos reservados.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-outline-light btn-sm">
-                            <i class="bi bi-translate"></i> Português
-                        </button>
-                        <button type="button" class="btn btn-outline-light btn-sm">
-                            <i class="bi bi-translate"></i> English
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../frameworks/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<header class="nav"><div class="nav-in"><div class="bar">
+<a class="brand" href="home.html" aria-label="Nelson Munguambe, início"><span class="av"><img src="../imagens/nelson1.jpeg" alt="" onerror="this.replaceWith('NM')"></span><span class="nm">Nelson Munguambe</span></a>
+<nav id="menu" aria-label="Principal"><ul><li><a href="home.html"><i class="bi bi-house" aria-hidden="true"></i>Home</a></li><li><a href="about.html" aria-current="page"><i class="bi bi-person" aria-hidden="true"></i>Sobre</a></li><li><a href="skills.html"><i class="bi bi-code-slash" aria-hidden="true"></i>Habilidades</a></li><li><a href="projects.html"><i class="bi bi-grid" aria-hidden="true"></i>Projectos</a></li><li><a href="contact.html"><i class="bi bi-envelope" aria-hidden="true"></i>Contacto</a></li></ul></nav>
+<button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+</div></div></header>
+<main>
+<div class="wrap phead"><h1><span class="line"><span>Sobre</span></span><span class="line"><span>Mim</span></span></h1><p class="lead">Minha Jornada na Programação: Autodidata e Apaixonado por Tecnologia</p></div>
+<section style="padding-top:0"><div class="wrap"><div class="cols"><div class="gal"><figure><img src="../imagens/nelson1.jpeg" alt="Retrato de Nelson Munguambe, desenvolvedor Full Stack e administrador de sistemas" width="1000" height="1334" loading="lazy"></figure><figure><img src="../imagens/nelson2.jpeg" alt="Nelson Munguambe de corpo inteiro" width="1200" height="1600" loading="lazy"></figure></div>
+<div><h2 class="big">Nelson João Munguambe Junior</h2><p class="mute" style="margin:12px 0 28px">Desenvolvedor Full Stack | Administrador de Sistemas | Autodidata | Estudante de Engenharia</p>
+<div class="grid g2"><div class="cell"><div class="ico"><i class="bi bi-calendar-heart" aria-hidden="true"></i></div><p style="font-size:14px">Idade</p><h3 style="font-size:clamp(18px,1.8vw,24px);margin:4px 0 0">22 anos</h3></div><div class="cell"><div class="ico"><i class="bi bi-geo-alt" aria-hidden="true"></i></div><p style="font-size:14px">Localização</p><h3 style="font-size:clamp(18px,1.8vw,24px);margin:4px 0 0">Bagamoyo, Maputo - Moçambique</h3></div><div class="cell"><div class="ico"><i class="bi bi-mortarboard" aria-hidden="true"></i></div><p style="font-size:14px">Formação</p><h3 style="font-size:clamp(18px,1.8vw,24px);margin:4px 0 0">Engenharia em TSI (Cursando)</h3></div><div class="cell"><div class="ico"><i class="bi bi-building" aria-hidden="true"></i></div><p style="font-size:14px">Universidade</p><h3 style="font-size:clamp(18px,1.8vw,24px);margin:4px 0 0">Universidade Joaquim Chissano</h3></div></div></div></div></div></section>
+<section class="soft-bg"><div class="wrap"><div class="sec-head"><h2>Minha Jornada na Programação</h2></div>
+<p class="about-text" id="about-text">Sou um desenvolvedor moçambicano autodidata, apaixonado por tecnologia e inovação. Minha jornada na programação começou em 2022, quando dei os primeiros passos com Python.</p>
+<div class="cols prose" style="margin-top:clamp(36px,5vw,64px)"><div><p>Durante 6 meses mergulhei fundo no Python, aprendendo os fundamentos da programação, lógica computacional e resolvendo problemas complexos. Essa base sólida me permitiu expandir meus conhecimentos para outras tecnologias.</p>
+<p>Como autodidata, desenvolvi uma forte capacidade de aprendizado independente e resolução de problemas. Atualmente, estou no terceiro ano do curso de Engenharia em Tecnologia e Sistemas de Informação na Universidade Joaquim Chissano, onde complemento meu conhecimento prático com fundamentos teóricos.</p>
+<p>Em 2026 trabalho como Administrador de Sistemas. No dia a dia monitorizo servidores, faço troubleshooting e trabalho com redes (VLAN, WLAN e Ethernet), e tenho conhecimentos de virtualização e segurança da informação.</p></div>
+<div><div class="big" style="margin-bottom:28px"><span data-count="2" data-suf=" Anos">2 Anos</span><small>de experiência em desenvolvimento web full stack com projetos reais e aplicações funcionais.</small></div>
+<div class="big"><span data-count="4" data-suf=" Anos">4 Anos</span><small>de experiência geral com tecnologia, computação e resolução de problemas técnicos.</small></div></div></div></div></section>
+<section><div class="wrap"><div class="cols"><div><div class="sec-head"><h2><i class="bi bi-bullseye" aria-hidden="true"></i> Objectivos Profissionais</h2></div><ul class="bullets"><li><i class="bi bi-check2" aria-hidden="true"></i><span>Desenvolver soluções inovadoras para Moçambique</span></li><li><i class="bi bi-check2" aria-hidden="true"></i><span>Especializar-me em desenvolvimento full stack</span></li><li><i class="bi bi-check2" aria-hidden="true"></i><span>Contribuir para projetos open source</span></li><li><i class="bi bi-check2" aria-hidden="true"></i><span>Tornar-me referência em tecnologia em Moçambique</span></li></ul></div>
+<div><div class="sec-head"><h2><i class="bi bi-heart" aria-hidden="true"></i> Paixões</h2></div><ul class="bullets"><li><i class="bi bi-heart-fill" aria-hidden="true"></i><span>Desenvolvimento de software</span></li><li><i class="bi bi-heart-fill" aria-hidden="true"></i><span>Inovação tecnológica</span></li><li><i class="bi bi-heart-fill" aria-hidden="true"></i><span>Compartilhar conhecimento</span></li><li><i class="bi bi-heart-fill" aria-hidden="true"></i><span>Tecnologia para impacto social</span></li></ul></div></div></div></section>
+<section class="dark"><div class="wrap"><div class="sec-head"><h2>Linha do Tempo</h2></div><ol class="timeline"><li><time>2022 - Presente</time><div><h3>Universidade Joaquim Chissano</h3><p>Engenharia em Tecnologia e Sistemas de Informação</p></div></li><li><time>2022 - Início</time><div><h3>Primeiros Passos em Python</h3><p>6 meses focados em fundamentos da programação</p></div></li><li><time>2022 - Meio</time><div><h3>Expansão para Web Development</h3><p>HTML, CSS, JavaScript e frameworks</p></div></li><li><time>2023</time><div><h3>Desenvolvimento Full Stack</h3><p>PHP, Laravel, Java, Spring, React, MySQL</p></div></li><li><time>2024</time><div><h3>Projetos Reais & Experiência</h3><p>Aplicações em produção e colaborações</p></div></li><li><time>2026</time><div><h3>Administrador de Sistemas</h3><p>Monitorização de servidores, troubleshooting, redes, virtualização e segurança da informação</p></div></li></ol></div></section>
+<section><div class="wrap"><div class="sec-head"><h2>Metodologia de Aprendizado</h2></div><div class="grid g4">
+<div class="cell"><div class="ico"><i class="bi bi-tools" aria-hidden="true"></i></div><h3>Aprendizado Prático</h3><p>Projetos reais como principal método</p></div><div class="cell"><div class="ico"><i class="bi bi-book" aria-hidden="true"></i></div><h3>Documentação Oficial</h3><p>Estudo direto da documentação</p></div><div class="cell"><div class="ico"><i class="bi bi-people" aria-hidden="true"></i></div><h3>Comunidade Tech</h3><p>Participação em fóruns e grupos</p></div><div class="cell"><div class="ico"><i class="bi bi-rocket-takeoff" aria-hidden="true"></i></div><h3>Projetos Pessoais</h3><p>Desenvolvimento contínuo</p></div></div></div></section>
+<section class="soft-bg"><div class="wrap"><div class="sec-head"><h2>Minha Filosofia</h2></div><blockquote class="quote"><i class="bi bi-quote" aria-hidden="true"></i>Acredito que a tecnologia é a ferramenta mais poderosa para transformar realidades. Como desenvolvedor autodidata, aprendi que não existem limites para o aprendizado quando há paixão e determinação.<cite>Nelson Munguambe</cite></blockquote></div></section>
+</main>
+<footer>
+<div class="fgrid">
+<div><a class="brand" href="home.html">Nelson Munguambe</a><p>Desenvolvedor Full Stack e estudante de Engenharia em Tecnologia e Sistemas de Informação na Universidade Joaquim Chissano.</p>
+<div class="soc"><a href="https://github.com/NelsonProgrammer" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a><a href="https://wa.me/258842408700" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a><a href="mailto:munguambenelson26@gmail.com" aria-label="Email"><i class="bi bi-envelope" aria-hidden="true"></i></a></div></div>
+<div><h4>Navegação</h4><ul><li><i class="bi bi-chevron-right" aria-hidden="true"></i><a href="home.html">Home</a></li><li><i class="bi bi-chevron-right" aria-hidden="true"></i><a href="about.html">Sobre</a></li><li><i class="bi bi-chevron-right" aria-hidden="true"></i><a href="skills.html">Habilidades</a></li><li><i class="bi bi-chevron-right" aria-hidden="true"></i><a href="projects.html">Projectos</a></li><li><i class="bi bi-chevron-right" aria-hidden="true"></i><a href="contact.html">Contacto</a></li></ul></div>
+<div><h4>Tecnologias</h4><ul><li><i class="bi bi-code-slash" aria-hidden="true"></i>HTML, CSS, JavaScript</li><li><i class="bi bi-code-slash" aria-hidden="true"></i>React e PHP Laravel</li><li><i class="bi bi-code-slash" aria-hidden="true"></i>Java Spring e C#</li><li><i class="bi bi-code-slash" aria-hidden="true"></i>MySQL e Python Django</li><li><i class="bi bi-hdd-network" aria-hidden="true"></i>Redes, Virtualização e Segurança</li></ul></div>
+<div><h4>Contacto</h4><ul><li><i class="bi bi-geo-alt" aria-hidden="true"></i>Bagamoyo, Maputo, Moçambique</li><li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:munguambenelson26@gmail.com">munguambenelson26@gmail.com</a></li><li><i class="bi bi-telephone" aria-hidden="true"></i><a href="https://wa.me/258842408700">+258 84 240 8700</a></li><li><i class="bi bi-mortarboard" aria-hidden="true"></i>Universidade Joaquim Chissano</li></ul></div>
+</div>
+<div class="copy"><span>© <span id="ano">2026</span> Nelson Munguambe. Todos os direitos reservados.</span><span>Português</span></div>
+</footer>
+<script src="../assets/main.js"></script>
+</body></html>

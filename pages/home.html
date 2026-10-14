@@ -1,332 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nelson Munguambe - Portfólio</title>
-    <link href="../frameworks/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../frameworks/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-        }
-        .nav-link.active {
-            font-weight: bold;
-            color: #667eea !important;
-        }
-        .quick-card {
-            transition: transform 0.3s, box-shadow 0.3s;
-            height: 100%;
-        }
-        .quick-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        .profile-img {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border: 5px solid white;
-        }
-        .tech-badge {
-            font-size: 0.8rem;
-            margin: 2px;
-        }
-        .stats-section {
-            background: linear-gradient(45deg, #343a40, #495057);
-        }
-    </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nelson Munguambe | Desenvolvedor Full Stack e Administrador de Sistemas em Maputo</title>
+<meta name="description" content="Nelson Munguambe, desenvolvedor Full Stack e administrador de sistemas em Maputo, Moçambique. Sites, sistemas web, APIs, redes, servidores e segurança da informação.">
+<meta name="author" content="Nelson João Munguambe">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://SEU-DOMINIO.com/pages/home.html">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_PT"><meta property="og:site_name" content="Nelson Munguambe">
+<meta property="og:title" content="Nelson Munguambe | Desenvolvedor Full Stack e Administrador de Sistemas em Maputo"><meta property="og:description" content="Nelson Munguambe, desenvolvedor Full Stack e administrador de sistemas em Maputo, Moçambique. Sites, sistemas web, APIs, redes, servidores e segurança da informação."><meta property="og:url" content="https://SEU-DOMINIO.com/pages/home.html"><meta property="og:image" content="https://SEU-DOMINIO.com/imagens/nelson1.jpeg"><meta property="og:image:alt" content="Retrato de Nelson Munguambe">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Nelson Munguambe | Desenvolvedor Full Stack e Administrador de Sistemas em Maputo"><meta name="twitter:description" content="Nelson Munguambe, desenvolvedor Full Stack e administrador de sistemas em Maputo, Moçambique. Sites, sistemas web, APIs, redes, servidores e segurança da informação."><meta name="twitter:image" content="https://SEU-DOMINIO.com/imagens/nelson1.jpeg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Nelson João Munguambe", "alternateName": ["Nelson Munguambe", "Nelson Munguambe Junior"], "url": "https://SEU-DOMINIO.com/pages/home.html", "image": "https://SEU-DOMINIO.com/imagens/nelson1.jpeg", "jobTitle": "Desenvolvedor Full Stack e Administrador de Sistemas", "description": "Desenvolvedor Full Stack e Administrador de Sistemas moçambicano, com experiência em PHP, Laravel, Java, Spring, React, redes, virtualização e segurança da informação.", "address": {"@type": "PostalAddress", "addressLocality": "Maputo", "addressCountry": "MZ"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidade Joaquim Chissano"}, "knowsAbout": ["Desenvolvimento web", "PHP", "Laravel", "Java", "Spring Boot", "React", "JavaScript", "MySQL", "Administração de sistemas", "Monitorização de servidores", "Redes VLAN WLAN Ethernet", "Virtualização", "Segurança da informação"], "sameAs": ["https://github.com/NelsonProgrammer"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+<link rel="stylesheet" href="../assets/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="home.html">
-                <i class="bi bi-code-slash"></i> Nelson Munguambe
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="home.html">
-                            <i class="bi bi-house"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
-                            <i class="bi bi-person"></i> Sobre
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="skills.html">
-                            <i class="bi bi-tools"></i> Habilidades
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">
-                            <i class="bi bi-folder"></i> Projectos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            <i class="bi bi-envelope"></i> Contacto
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">Olá, eu sou <span class="text-warning">Nelson Munguambe</span></h1>
-                    <p class="lead mb-4">Desenvolvedor Full Stack Moçambicano apaixonado por criar soluções inovadoras. Estudante de Engenharia em Tecnologia e Sistemas de Informação na Universidade Joaquim Chissano.</p>
-                    
-
-                    <div class="d-flex gap-3 flex-wrap">
-                        <a href="projects.html" class="btn btn-warning btn-lg">
-                            <i class="bi bi-eye"></i> Ver Projetos
-                        </a>
-                        <a href="contact.html" class="btn btn-outline-light btn-lg">
-                            <i class="bi bi-chat"></i> Vamos Conversar
-                        </a>
-                        <a href="../docs/nelson-cv-actualizado.pdf" class="btn btn-success btn-lg" download>
-                            <i class="bi bi-download"></i> Baixar CV
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <img src="../imagens/nelson1.jpg" alt="Nelson Munguambe" class="profile-img rounded-circle shadow">
-                    <div class="mt-4">
-                        <div class="row text-center">
-                            <div class="col-4">
-                                <h4 class="text-warning mb-0">2+</h4>
-                                <small>Anos de Experiência</small>
-                            </div>
-                            <div class="col-4">
-                                <h4 class="text-warning mb-0">5+</h4>
-                                <small>Projetos Concluídos</small>
-                            </div>
-                            <div class="col-4">
-                                <h4 class="text-warning mb-0">4+</h4>
-                                <small>Tecnologias</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Navegação Rápida</h2>
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <div class="card quick-card border-0 shadow">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-person display-4 text-primary mb-3"></i>
-                            <h5 class="card-title">Sobre Mim</h5>
-                            <p class="card-text">Conheça minha trajetória e experiência profissional</p>
-                            <a href="about.html" class="btn btn-primary">Saiba Mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card quick-card border-0 shadow">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-tools display-4 text-success mb-3"></i>
-                            <h5 class="card-title">Habilidades</h5>
-                            <p class="card-text">Tecnologias e ferramentas que domino</p>
-                            <a href="skills.html" class="btn btn-success">Ver Skills</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card quick-card border-0 shadow">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-folder display-4 text-info mb-3"></i>
-                            <h5 class="card-title">Projetos</h5>
-                            <p class="card-text">Portfólio dos meus trabalhos realizados</p>
-                            <a href="projects.html" class="btn btn-info">Ver Projetos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card quick-card border-0 shadow">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-envelope display-4 text-warning mb-3"></i>
-                            <h5 class="card-title">Contato</h5>
-                            <p class="card-text">Entre em contacto para conversarmos</p>
-                            <a href="contact.html" class="btn btn-warning">Contactar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="stats-section text-white py-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-3 mb-4">
-                    <i class="bi bi-code-slash display-4 text-warning mb-3"></i>
-                    <h3>Front-end</h3>
-                    <p>HTML, CSS, JavaScript, React</p>
-                    <div class="progress mb-2">
-                        <div class="progress-bar bg-warning" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <i class="bi bi-server display-4 text-info mb-3"></i>
-                    <h3>Back-end</h3>
-                    <p>PHP, Laravel, Java, Spring, C#</p>
-                    <div class="progress mb-2">
-                        <div class="progress-bar bg-info" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <i class="bi bi-database display-4 text-success mb-3"></i>
-                    <h3>Banco de Dados</h3>
-                    <p>MySQL, Design & Otimização</p>
-                    <div class="progress mb-2">
-                        <div class="progress-bar bg-success" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <i class="bi bi-tools display-4 text-primary mb-3"></i>
-                    <h3>Ferramentas</h3>
-                    <p>Git, Docker, VS Code, Postman</p>
-                    <div class="progress mb-2">
-                        <div class="progress-bar bg-primary" style="width: 70%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Projetos Recentes</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow border-0">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-cart display-4 text-primary mb-3"></i>
-                            <h5 class="card-title">E-commerce Laravel</h5>
-                            <p class="card-text">Sistema completo de e-commerce desenvolvido com PHP Laravel e MySQL</p>
-                            <span class="badge bg-primary">PHP</span>
-                            <span class="badge bg-danger">Laravel</span>
-                            <span class="badge bg-secondary">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow border-0">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-people display-4 text-success mb-3"></i>
-                            <h5 class="card-title">Sistema Acadêmico</h5>
-                            <p class="card-text">Sistema de gestão académica desenvolvido com Java Spring Boot</p>
-                            <span class="badge bg-orange">Java</span>
-                            <span class="badge bg-success">Spring</span>
-                            <span class="badge bg-secondary">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow border-0">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-graph-up display-4 text-info mb-3"></i>
-                            <h5 class="card-title">Dashboard React</h5>
-                            <p class="card-text">Dashboard interativo para análise de dados com React e Chart.js</p>
-                            <span class="badge bg-info">React</span>
-                            <span class="badge bg-warning">JavaScript</span>
-                            <span class="badge bg-success">API REST</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="projects.html" class="btn btn-primary btn-lg">
-                    <i class="bi bi-arrow-right"></i> Ver Todos os Projetos
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-dark text-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h5 class="fw-bold mb-3">
-                        <i class="bi bi-code-slash"></i> Nelson Munguambe
-                    </h5>
-                    <p>Desenvolvedor Full Stack e estudante de Engenharia em Tecnologia e Sistemas de Informação na Universidade Joaquim Chissano.</p>
-                    <div class="social-links">
-                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-github"></i></a>
-                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-light me-3 fs-5"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 mb-4">
-                    <h6 class="fw-bold">Navegação</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="home.html" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="about.html" class="text-light text-decoration-none">Sobre</a></li>
-                        <li><a href="skills.html" class="text-light text-decoration-none">Habilidades</a></li>
-                        <li><a href="projects.html" class="text-light text-decoration-none">Projetos</a></li>
-                        <li><a href="contact.html" class="text-light text-decoration-none">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h6 class="fw-bold">Tecnologias</h6>
-                    <ul class="list-unstyled">
-                        <li> HTML, CSS, JavaScript</li>
-                        <li> React & PHP Laravel</li>
-                        <li> Java Spring & C#</li>
-                        <li> MySQL & Python Django</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h6 class="fw-bold">Contact Info</h6>
-                    <ul class="list-unstyled">
-                        <li><i class="bi bi-geo-alt me-2"></i> Bagamoyo, Maputo - Moçambique</li>
-                        <li><i class="bi bi-envelope me-2"></i> munguambenelson26@gmail.com</li>
-                        <li><i class="bi bi-phone me-2"></i> +258 84 240 8700</li>
-                        <li><i class="bi bi-building me-2"></i> Universidade Joaquim Chissano</li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2026 Nelson Munguambe. Todos os direitos reservados.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-outline-light btn-sm">
-                            <i class="bi bi-translate"></i> Português
-                        </button>
-                        <button type="button" class="btn btn-outline-light btn-sm">
-                            <i class="bi bi-translate"></i> English
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../frameworks/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<header class="nav"><div class="nav-in"><div class="bar">
+<a class="brand" href="home.html" aria-label="Nelson Munguambe, início"><span class="av"><img src="../imagens/nelson1.jpeg" alt="" onerror="this.replaceWith('NM')"></span><span class="nm">Nelson Munguambe</span></a>
+<nav id="menu" aria-label="Principal"><ul><li><a href="home.html" aria-current="page"><i class="bi bi-house" aria-hidden="true"></i>Home</a></li><li><a href="about.html"><i class="bi bi-person" aria-hidden="true"></i>Sobre</a></li><li><a href="skills.html"><i class="bi bi-code-slash" aria-hidden="true"></i>Habilidades</a></li><li><a href="projects.html"><i class="bi bi-grid" aria-hidden="true"></i>Projectos</a></li><li><a href="contact.html"><i class="bi bi-envelope" aria-hidden="true"></i>Contacto</a></li></ul></nav>
+<button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+</div></div></header>
+<main>
+<div class="wrap hero"><div>
+<span class="hello"><i class="bi bi-hand-index-thumb" aria-hidden="true"></i> Olá, eu sou</span>
+<h1><span class="line"><span>Nelson</span></span><span class="line"><span>Munguambe</span></span></h1>
+<p class="lead">Desenvolvedor Full Stack e Administrador de Sistemas moçambicano, apaixonado por criar soluções inovadoras. Estudante de Engenharia em Tecnologia e Sistemas de Informação na Universidade Joaquim Chissano.</p>
+<div class="cta"><a class="btn" href="projects.html"><i class="bi bi-grid" aria-hidden="true"></i>Ver Projectos</a><a class="btn ghost" href="contact.html"><i class="bi bi-chat-dots" aria-hidden="true"></i>Vamos Conversar</a><a class="btn ghost" href="../docs/nelson-cv-actualizado.pdf" download><i class="bi bi-download" aria-hidden="true"></i>Baixar CV</a></div>
+<div class="stats"><div><b data-count="2" data-suf="+">2+</b><span>Anos de Experiência</span></div><div><b data-count="5" data-suf="+">5+</b><span>Projectos Concluídos</span></div><div><b data-count="4" data-suf="+">4+</b><span>Tecnologias</span></div></div></div>
+<figure class="ph"><img src="../imagens/nelson1.jpeg" alt="Nelson Munguambe, desenvolvedor Full Stack e administrador de sistemas em Maputo" width="1000" height="1334" fetchpriority="high"></figure></div>
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+<section><div class="wrap"><div class="sec-head"><h2>Navegação Rápida</h2></div><div class="grid g4">
+<a class="cell" href="about.html"><div class="ico"><i class="bi bi-person-badge" aria-hidden="true"></i></div><h3>Sobre Mim</h3><p>Conheça minha trajetória e experiência profissional</p><span class="go">Saiba Mais <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span></a>
+<a class="cell" href="skills.html"><div class="ico"><i class="bi bi-cpu" aria-hidden="true"></i></div><h3>Habilidades</h3><p>Tecnologias e ferramentas que domino</p><span class="go">Ver Skills <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span></a>
+<a class="cell" href="projects.html"><div class="ico"><i class="bi bi-kanban" aria-hidden="true"></i></div><h3>Projectos</h3><p>Portfólio dos meus trabalhos realizados</p><span class="go">Ver Projectos <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span></a>
+<a class="cell" href="contact.html"><div class="ico"><i class="bi bi-envelope-paper" aria-hidden="true"></i></div><h3>Contacto</h3><p>Entre em contacto para conversarmos</p><span class="go">Contactar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span></a></div></div></section>
+<section class="soft-bg"><div class="wrap"><div class="sec-head"><h2>Stack</h2></div><div class="grid g4">
+<div class="cell"><div class="ico"><i class="bi bi-window-desktop" aria-hidden="true"></i></div><h3>Front-end</h3><div class="chips"><span class="chip"><i class="devicon-html5-plain" aria-hidden="true"></i>HTML</span><span class="chip"><i class="devicon-css3-plain" aria-hidden="true"></i>CSS</span><span class="chip"><i class="devicon-javascript-plain" aria-hidden="true"></i>JavaScript</span><span class="chip"><i class="devicon-react-original" aria-hidden="true"></i>React</span></div></div>
+<div class="cell"><div class="ico"><i class="bi bi-hdd-rack" aria-hidden="true"></i></div><h3>Back-end</h3><div class="chips"><span class="chip"><i class="devicon-php-plain" aria-hidden="true"></i>PHP</span><span class="chip"><i class="devicon-laravel-plain" aria-hidden="true"></i>Laravel</span><span class="chip"><i class="devicon-java-plain" aria-hidden="true"></i>Java</span><span class="chip"><i class="devicon-spring-plain" aria-hidden="true"></i>Spring</span><span class="chip"><i class="devicon-csharp-plain" aria-hidden="true"></i>C#</span></div></div>
+<div class="cell"><div class="ico"><i class="bi bi-database" aria-hidden="true"></i></div><h3>Banco de Dados</h3><div class="chips"><span class="chip"><i class="devicon-mysql-plain" aria-hidden="true"></i>MySQL</span></div><p style="margin-top:12px">Design &amp; Otimização</p></div>
+<div class="cell"><div class="ico"><i class="bi bi-tools" aria-hidden="true"></i></div><h3>Ferramentas</h3><div class="chips"><span class="chip"><i class="devicon-git-plain" aria-hidden="true"></i>Git</span><span class="chip"><i class="devicon-docker-plain" aria-hidden="true"></i>Docker</span><span class="chip"><i class="devicon-vscode-plain" aria-hidden="true"></i>VS Code</span><span class="chip"><i class="devicon-postman-plain" aria-hidden="true"></i>Postman</span></div></div>
+<div class="cell" style="grid-column:1/-1"><div class="ico"><i class="bi bi-hdd-network" aria-hidden="true"></i></div><h3>Sistemas e Redes</h3><div class="chips"><span class="chip"><i class="bi bi-activity" aria-hidden="true"></i>Monitorização de servidores</span><span class="chip"><i class="bi bi-wrench-adjustable-circle" aria-hidden="true"></i>Troubleshooting</span><span class="chip"><i class="bi bi-diagram-3" aria-hidden="true"></i>VLAN</span><span class="chip"><i class="bi bi-wifi" aria-hidden="true"></i>WLAN</span><span class="chip"><i class="bi bi-ethernet" aria-hidden="true"></i>Ethernet</span><span class="chip"><i class="bi bi-pc-display" aria-hidden="true"></i>Virtualização</span><span class="chip"><i class="bi bi-shield-lock" aria-hidden="true"></i>Segurança da informação</span></div></div></div></div></section>
+<section class="dark"><div class="wrap"><div class="sec-head"><h2>Projectos Recentes</h2></div><div class="grid g3">
+<div class="cell"><div class="ico"><i class="bi bi-cart3" aria-hidden="true"></i></div><h3>E-commerce Laravel</h3><p>Sistema completo de e-commerce desenvolvido com PHP Laravel e MySQL</p><div class="tags"><i>PHP</i><i>Laravel</i><i>MySQL</i></div></div>
+<div class="cell"><div class="ico"><i class="bi bi-mortarboard" aria-hidden="true"></i></div><h3>Sistema Académico</h3><p>Sistema de gestão académica desenvolvido com Java Spring Boot</p><div class="tags"><i>Java</i><i>Spring</i><i>MySQL</i></div></div>
+<div class="cell"><div class="ico"><i class="bi bi-bar-chart-line" aria-hidden="true"></i></div><h3>Dashboard React</h3><p>Dashboard interativo para análise de dados com React e Chart.js</p><div class="tags"><i>React</i><i>JavaScript</i><i>API REST</i></div></div></div>
+<div class="cta"><a class="btn" href="projects.html">Ver Todos os Projectos <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div></div></section>
+</main>
+<footer>
+<div class="fgrid">
+<div><a class="brand" href="home.html">Nelson Munguambe</a><p>Desenvolvedor Full Stack e estudante de Engenharia em Tecnologia e Sistemas de Informação na Universidade Joaquim Chissano.</p>
+<div class="soc"><a href="https://github.com/NelsonProgrammer" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a><a href="https://wa.me/258842408700" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a><a href="mailto:munguambenelson26@gmail.com" aria-label="Email"><i class="bi bi-envelope" aria-hidden="true"></i></a></div></div>
+<div><h4>Navegação</h4><ul><li><i class="bi bi-chevron-right" aria-hidden="true"></i><a href="home.html">Home</a></li><li><i class="bi bi-chevron-right" aria-hidden="true"></i><a href="about.html">Sobre</a></li><li><i class="bi bi-chevron-right" aria-hidden="true"></i><a href="skills.html">Habilidades</a></li><li><i class="bi bi-chevron-right" aria-hidden="true"></i><a href="projects.html">Projectos</a></li><li><i class="bi bi-chevron-right" aria-hidden="true"></i><a href="contact.html">Contacto</a></li></ul></div>
+<div><h4>Tecnologias</h4><ul><li><i class="bi bi-code-slash" aria-hidden="true"></i>HTML, CSS, JavaScript</li><li><i class="bi bi-code-slash" aria-hidden="true"></i>React e PHP Laravel</li><li><i class="bi bi-code-slash" aria-hidden="true"></i>Java Spring e C#</li><li><i class="bi bi-code-slash" aria-hidden="true"></i>MySQL e Python Django</li><li><i class="bi bi-hdd-network" aria-hidden="true"></i>Redes, Virtualização e Segurança</li></ul></div>
+<div><h4>Contacto</h4><ul><li><i class="bi bi-geo-alt" aria-hidden="true"></i>Bagamoyo, Maputo, Moçambique</li><li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:munguambenelson26@gmail.com">munguambenelson26@gmail.com</a></li><li><i class="bi bi-telephone" aria-hidden="true"></i><a href="https://wa.me/258842408700">+258 84 240 8700</a></li><li><i class="bi bi-mortarboard" aria-hidden="true"></i>Universidade Joaquim Chissano</li></ul></div>
+</div>
+<div class="copy"><span>© <span id="ano">2026</span> Nelson Munguambe. Todos os direitos reservados.</span><span>Português</span></div>
+</footer>
+<script src="../assets/main.js"></script>
+</body></html>
